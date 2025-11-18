@@ -7,12 +7,12 @@ The application is built with:
 * **Backend:** Flask (Python)
 * **Cloud Hosting:** AWS (S3 static hosting + API endpoint)
 
-👉 **Live Application:**
+ **Live Application:**
 [http://battery-soh-frontend.s3-website.ca-central-1.amazonaws.com/](http://battery-soh-frontend.s3-website.ca-central-1.amazonaws.com/)
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 BatterySOH_Project/
@@ -34,19 +34,18 @@ BatterySOH_Project/
 
 ---
 
-## 🚀 Features
+## Features
 
-* Predicts battery **State of Health (SOH)** using user inputs
+* Predicts battery **State of Health (SOH)** using Linear Regression Model
 * Clean React interface with routing
-* Flask REST API for ML inference
-* Fully deployed on AWS (S3 + custom backend)
+* Chatbox Integration via ChatGPT
 * CORS-enabled full-stack communication
 
 ---
 
-# 🛠️ Local Development Setup
+# Local Development Setup
 
-## 1️⃣ Backend Setup (Flask API)
+## 1. Backend Setup (Flask API)
 
 ### **Install dependencies**
 
@@ -80,7 +79,7 @@ http://localhost:5000
 
 ---
 
-## 2️⃣ Frontend Setup (React + Vite)
+## 2. Frontend Setup (React + Vite)
 
 ### **Install dependencies**
 
@@ -105,7 +104,7 @@ http://localhost:5173
 
 ---
 
-## 🌐 API & Environment Variables
+## API & Environment Variables
 
 Create a `.env` file in both **backend** and **frontend** folders.
 
@@ -123,11 +122,11 @@ VITE_API_URL=http://localhost:5000
 
 ---
 
-# ☁️ Deployment (AWS)
+# Deployment (AWS)
 
 The app is currently deployed with:
 
-### ✅ **Frontend:**
+### **Frontend:**
 
 AWS S3 Static Website Hosting
 Public URL:
@@ -142,7 +141,7 @@ Public URL:
 
 ---
 
-# 📦 Build Commands
+# Build Commands
 
 ## **Frontend Production Build**
 
@@ -160,7 +159,7 @@ gunicorn app:app
 
 ---
 
-# 🤝 Contributors
+# Contributors
 
 * **Vinujen & Rukshan** – Frontend & Chatbox Integration
 * **Kushi & Prabnoor** - Linear Regression Model
