@@ -3,7 +3,7 @@
 A full-stack web application that predicts the **State of Health (SOH)** of a battery using a **Trained Linear Regression Model** and contains a Built-In ChatBox Integration.
 The application is built with:
 
-* **Frontend:** React + Vite
+* **Frontend:** React+TailWind
 * **Backend:** Flask (Python)
 * **Cloud Hosting:** AWS (S3 static hosting + API endpoint)
 
