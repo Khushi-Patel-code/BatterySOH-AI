@@ -1,9 +1,22 @@
+/* Sets the font style for content and adds padding around the outside edge of the container */
 .container { font-family: sans-serif; padding: 2rem; }
+
+/* Uses Flexbox for arranging child elements and allows items to wrap onto the next line */
 .grid { display: flex; flex-wrap: wrap; gap: 2rem; }
+
+/* Allows the card to grow/shrink in the flex layout */
 .card { flex: 1; min-width: 350px; padding: 1.5rem; border: 1px solid #ccc; border-radius: 10px; }
+
+/* Sets a light background color specific to chat elements */
 .chat { background: #f8f8ff; }
+
+/* Sets a narrow width for input fields and adds margins around the input field */
 input { width: 60px; margin: 3px; }
+
+/* Adds top margins to superate buttons from elements above it */
 button { margin-top: 10px; cursor: pointer; }
+
+
 .result { margin-top: 1rem; }
 .metrics, .importance { margin-top: 1rem; }
 progress { width: 100%; height: 20px; }

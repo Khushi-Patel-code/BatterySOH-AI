@@ -3,43 +3,67 @@ import axios from "axios";
 import "./index.css";
 import { API_URL } from "./config";
 
+// Main functional component for the Battery Health Dashboard
 function App() {
+  // State management for prediction inputs and results
+
+  // State to hold the 21 cell voltage values (U1-U21). Defaulted to 3.5V for all cells
   const [uValues, setUValues] = useState(Array(21).fill(3.5));
+  // State for the predicted State of Health value
   const [soh, setSoh] = useState(null);
+  // State for the battery health status string (e.g., "Healthy" or "Unhealthy").
   const [status, setStatus] = useState("");
+  // State to store model performance metrics (e.g., { "R2": 0.95, "MSE": 0.001 }).
   const [metrics, setMetrics] = useState({});
+  // State to store feature importance scores, often used to explain the prediction.
+
+  // State management for Chatbox
+
+  // State for the user's question input
   const [importance, setImportance] = useState({});
+  //State for the chatbot's generated response
   const [question, setQuestion] = useState("");
+  // State for chatbot's mode: "general" for general knowledge, "explain" for prediction-specific
   const [answer, setAnswer] = useState("");
+  // Asynchronous function to call the SOH prediction API endpoint
   const [mode, setMode] = useState("general");
 
+  // Asynchronous function to call the SOH prediction API endpoint
   const predictSOH = async () => {
+    // POST request to the backend's /predict endpoint, sending the current cell voltages
     try {
       const res = await axios.post(`${API_URL}/predict`, { u_values: uValues });
+      // Rounds to 3 decimal places for display
       setSoh(res.data.soh.toFixed(3));
+      // Update status string
       setStatus(res.data.status);
+      // Update model metric object
       setMetrics(res.data.metrics);
+      // Update feature importance object
       setImportance(res.data.importance);
     } catch (err) {
       console.error(err);
     }
   };
 
+  // Asnchronous function to call the chatbot API endpoint
   const askChat = async () => {
     try {
+    // POST request to backend's /chat endpoint, sending the question and the current mode
     const res = await axios.post(`${API_URL}/chat`, { question, mode });      
+    // Updates the answer state with the chatbot's response
     setAnswer(res.data.answer);
     } catch (err) {
       console.error(err);
     }
   };
 
+  // Main component rendering
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 p-8">
       <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-10 flex items-center gap-2">
         <span role="img" aria-label="battery">🔋</span> Battery Health Dashboard
       </h1>
-
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         {/* -------- Left Section (Inputs & Predictions) -------- */}
         <div className="bg-white/80 backdrop-blur-md shadow-lg rounded-2xl p-6 border border-gray-100">
