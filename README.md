@@ -128,13 +128,13 @@ The app is currently deployed with:
 
 ### **Frontend:**
 
-AWS S3 Static Website Hosting
+AWS Elastic Beanstalk
 Public URL:
 [http://battery-soh-frontend.s3-website.ca-central-1.amazonaws.com/](http://battery-soh-frontend.s3-website.ca-central-1.amazonaws.com/)
 
 ### Tools used:
 
-* S3 bucket hosting
+* Elastic Beanstalk hosting
 * CORS rules configured
 * API exposed publicly
 * Build + upload via `npm run build`
