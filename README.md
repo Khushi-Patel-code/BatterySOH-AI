@@ -93,7 +93,7 @@ npm install --save-dev vite
 ### **Run the frontend**
 
 ```
-npm run dev
+npm start
 ```
 
 Frontend will run at:
