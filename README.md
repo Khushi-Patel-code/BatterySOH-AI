@@ -5,7 +5,7 @@ The application is built with:
 
 * **Frontend:** React+TailWind
 * **Backend:** Flask (Python)
-* **Cloud Hosting:** AWS (S3 static hosting + API endpoint)
+* **Cloud Hosting:** AWS (Elastic Beanstalk)
 
  **Live Application:**
 [http://battery-soh-frontend.s3-website.ca-central-1.amazonaws.com/](http://battery-soh-frontend.s3-website.ca-central-1.amazonaws.com/)
