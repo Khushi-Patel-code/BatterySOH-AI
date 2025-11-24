@@ -146,7 +146,7 @@ Public URL:
 ## **Frontend Production Build**
 
 ```
-npm run build
+npm start
 ```
 
 This generates a `dist/` folder to upload to S3.
