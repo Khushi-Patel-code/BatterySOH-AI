@@ -89,6 +89,27 @@ The built-in chatbot enhances user interaction by:
 - If the query relates to SOH → response uses local prediction
 - Otherwise → response retrieved from ChatGPT API
 
+## 🖥️ User Interface & Dashboard 
+
+The dashboard is designed for **clarity** and **visual impact**, providing real-time information on battery health and system performance. 
+
+### Key UI Features
+
+* **Voltage Input Grid ($U_1$–$U_{21}$):** A tabular or grid component allowing for the input or display of the 21 cell-level features used by the model.
+* **SOH Numeric Display:** A prominent, real-time display showing the predicted State of Health (SOH) as a continuous value (e.g., 0.85).
+* **Health Status Indicator:** A clear, color-coded indicator (e.g., green/red) showing the classified health status: **Healthy / Unhealthy**.
+* **Progress Bar Visualization:** A graphic element (e.g., progress bar) visually representing the SOH value against the full range (0.0 to 1.0).
+* **Model Metrics Panel:** A dedicated section displaying the evaluation metrics from the training phase: $R^2$ Score, MSE, and MAE.
+* **Integrated Chatbot:** A feature included on the same page for user assistance or interaction with the system.
+
+### UX Enhancements
+
+* **Clean Layout:** Utilizes **Tailwind CSS** for a utility-first, modular design framework.
+* **Responsive Design:** Ensures the dashboard is fully functional and visually consistent across different screen sizes (desktop, tablet, mobile).
+* **Visual Separation:** Clear visual distinction between the main prediction display area and the integrated chat/support section.
+
+
+
 ## Project Structure
 
 ```
