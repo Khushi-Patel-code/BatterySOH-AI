@@ -11,6 +11,10 @@ The application is built with:
 👉 Deployed Application:  
 [http://battery-soh-frontend.s3-website.ca-central-1.amazonaws.com/](http://battery-soh-frontend.s3-website.ca-central-1.amazonaws.com/)
 
+<p>
+    <img src="./Screenshots/Dashboard.png" alt="Dashboard">
+</p>
+
 ## 🧩 Problem Statement
 
 Battery degradation directly affects the performance, safety, and lifespan of modern devices such as electric vehicles, mobile electronics, and energy storage systems.
