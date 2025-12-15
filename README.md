@@ -108,7 +108,25 @@ The dashboard is designed for **clarity** and **visual impact**, providing real-
 * **Responsive Design:** Ensures the dashboard is fully functional and visually consistent across different screen sizes (desktop, tablet, mobile).
 * **Visual Separation:** Clear visual distinction between the main prediction display area and the integrated chat/support section.
 
+## 🧰 Tech Stack
 
+### Frontend
+- React
+- Tailwind CSS
+- Axios
+- Vite
+
+### Backend
+- Flask
+- NumPy
+- Scikit-learn
+- Pickle
+- OpenAI API
+
+### Cloud & Deployment
+- AWS S3 (Frontend Hosting)
+- AWS Elastic Beanstalk (Backend API)
+- CORS-enabled API communication
 
 ## Project Structure
 
@@ -139,14 +157,12 @@ BatterySOH_Project/
 * Chatbox Integration via ChatGPT
 * CORS-enabled full-stack communication
 
----
 
 # Local Development Setup
 
 ## 1. Backend Setup (Flask API)
 
 ### **Install dependencies**
-
 ```
 pip install openai
 pip install python-dotenv
@@ -175,8 +191,6 @@ Backend will run at:
 http://localhost:5000
 ```
 
----
-
 ## 2. Frontend Setup (React + Vite)
 
 ### **Install dependencies**
@@ -200,7 +214,6 @@ Frontend will run at:
 http://localhost:5173
 ```
 
----
 
 ## API & Environment Variables
 
@@ -218,7 +231,6 @@ OPENAI_API_KEY=your_key_here
 VITE_API_URL=http://localhost:5000
 ```
 
----
 
 # Deployment (AWS)
 
@@ -254,6 +266,13 @@ This generates a `dist/` folder to upload to S3.
 gunicorn app:app
 ```
 
+## 🔮 Future Improvements
+- Advanced ML models (Random Forest, XGBoost, Neural Networks)
+- SHAP-based explainable AI
+- Chat history persistence
+- User authentication
+- Battery degradation trend visualization
+- Multi-battery comparison support
 
 # Contributors
 
