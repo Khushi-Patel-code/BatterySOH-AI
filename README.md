@@ -7,11 +7,11 @@ The application is built with:
 * **Backend:** Flask (Python)
 * **Cloud Hosting:** AWS (Elastic Beanstalk)
 
-**Live Demo:**
+## 🚀 Live Demo:
 👉 Deployed Application:  
 [http://battery-soh-frontend.s3-website.ca-central-1.amazonaws.com/](http://battery-soh-frontend.s3-website.ca-central-1.amazonaws.com/)
 
-## Problem Statement
+## 🧩 Problem Statement
 
 Battery degradation directly affects performance, safety, and lifespan in modern energy systems.
 Manually assessing battery health is time-consuming and often inaccessible to non-experts.
@@ -20,6 +20,14 @@ This project aims to:
 - Predict battery State of Health (SOH) using machine learning
 - Provide intuitive insights through an interactive dashboard
 - Assist users with battery-related questions via an AI chatbot
+
+## 🤖 Machine Learning Pipeline
+
+1. Raw cell voltage data is preprocessed
+2. Cell-level features (U1–U21) are aggregated
+3. A Linear Regression model is trained to predict SOH
+4. Model performance is evaluated using R², MAE, and MSE
+5. Predictions are served through a Flask API
 
 ## Dataset Overview
 
