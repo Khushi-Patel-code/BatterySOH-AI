@@ -1,5 +1,16 @@
 # 🔋 Battery State of Health (SOH) Prediction App
 
+A full-stack web application that predicts the **State of Health (SOH)** of a battery using a **Trained Linear Regression Model** and contains a Built-In ChatBox Integration.
+The application is built with:
+
+* **Frontend:** React+TailWind
+* **Backend:** Flask (Python)
+* **Cloud Hosting:** AWS (Elastic Beanstalk)
+
+**Live Demo:**
+👉 Deployed Application:  
+[http://battery-soh-frontend.s3-website.ca-central-1.amazonaws.com/](http://battery-soh-frontend.s3-website.ca-central-1.amazonaws.com/)
+
 ## Problem Statement
 
 Battery degradation directly affects performance, safety, and lifespan in modern energy systems.
@@ -14,16 +25,6 @@ This project aims to:
 
 The model is trained on the PulseBat dataset (`Data/PulseBat Dataset`), containing voltage pulse features from multiple battery cells (U1–U21).
 Aggregated cell-level information is used to estimate the overall battery pack SOH.
-
-A full-stack web application that predicts the **State of Health (SOH)** of a battery using a **Trained Linear Regression Model** and contains a Built-In ChatBox Integration.
-The application is built with:
-
-* **Frontend:** React+TailWind
-* **Backend:** Flask (Python)
-* **Cloud Hosting:** AWS (Elastic Beanstalk)
-
- **Live Application:**
-[http://battery-soh-frontend.s3-website.ca-central-1.amazonaws.com/](http://battery-soh-frontend.s3-website.ca-central-1.amazonaws.com/)
 
 ---
 
