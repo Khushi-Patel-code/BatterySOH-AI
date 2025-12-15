@@ -77,6 +77,17 @@ Metrics used:
   - SOH > 0.7 → Healthy  
   - SOH ≤ 0.7 → Unhealthy  
 
+## 💬 Chatbot Capabilities
+
+The built-in chatbot enhances user interaction by:
+- Responding to queries like "Check battery SOH"
+- Explaining battery health results in simple language
+- Providing AI-generated tips to extend battery lifespan
+- Making technical insights accessible to non-technical users
+
+### Chat Logic
+- If the query relates to SOH → response uses local prediction
+- Otherwise → response retrieved from ChatGPT API
 
 ## Project Structure
 
