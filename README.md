@@ -176,6 +176,9 @@ gunicorn app:app
 
 # Contributors
 
-* **Vinujen & Rukshan** – Web Application & Chatbox Integration
-* **Khushi & Prabnoor** - Linear Regression Model
+* **Vinujen** – Web Application & Chatbox Integration
+* **Rukshan** - Web Application & Chatbox Integration
+* **Khushi** - Linear Regression Model & Data Pre-processing
+* **Prabhnoor** - Linear Regression Model & Data Pre-processing
+
 
