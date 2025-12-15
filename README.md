@@ -1,5 +1,20 @@
 # 🔋 Battery State of Health (SOH) Prediction App
 
+## Problem Statement
+
+Battery degradation directly affects performance, safety, and lifespan in modern energy systems.
+Manually assessing battery health is time-consuming and often inaccessible to non-experts.
+
+This project aims to:
+- Predict battery State of Health (SOH) using machine learning
+- Provide intuitive insights through an interactive dashboard
+- Assist users with battery-related questions via an AI chatbot
+
+## Dataset Overview
+
+The model is trained on the PulseBat dataset (`Data/PulseBat Dataset`), containing voltage pulse features from multiple battery cells (U1–U21).
+Aggregated cell-level information is used to estimate the overall battery pack SOH.
+
 A full-stack web application that predicts the **State of Health (SOH)** of a battery using a **Trained Linear Regression Model** and contains a Built-In ChatBox Integration.
 The application is built with:
 
