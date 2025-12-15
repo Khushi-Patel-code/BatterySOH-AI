@@ -39,7 +39,16 @@ The ML model and chatbot operate together:
 
 ## 📊 Dataset Overview
 
+- **Dataset:** PulseBat Battery Dataset
+- **Features:**
+    * `U1-U21`: Voltage measurements captured during battery pulse tests
+- **Target Variable:**
+    * `SOH (State of Health)`: A normlaized value representing battery conditions
 
+### Preprocessing
+- Selected voltage features were aggregated per sample
+- Invalid or incomplete entries were removed
+- Data was structured to ensure consistent feature dimensions
 
 ## 🤖 Machine Learning Pipeline
 
