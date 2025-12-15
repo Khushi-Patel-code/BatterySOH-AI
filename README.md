@@ -143,7 +143,7 @@ The app is currently deployed with:
 
 ### **Frontend:**
 
-AWS Elastic Beanstalk
+Frontend hosted on AWS S3 (Static Website Hosting)
 Public URL:
 [http://battery-soh-frontend.s3-website.ca-central-1.amazonaws.com/](http://battery-soh-frontend.s3-website.ca-central-1.amazonaws.com/)
 
@@ -154,7 +154,6 @@ Public URL:
 * API exposed publicly
 * Build + upload via `npm run build`
 
----
 
 # Build Commands
 
@@ -172,7 +171,6 @@ This generates a `dist/` folder to upload to S3.
 gunicorn app:app
 ```
 
----
 
 # Contributors
 
