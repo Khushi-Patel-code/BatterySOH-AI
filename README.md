@@ -52,13 +52,30 @@ The ML model and chatbot operate together:
 
 ## 🤖 Machine Learning Pipeline
 
-1. Raw cell voltage data is preprocessed
-2. Cell-level features (U1–U21) are aggregated
-3. A Linear Regression model is trained to predict SOH
-4. Model performance is evaluated using R², MAE, and MSE
-5. Predictions are served through a Flask API
+### 1. Data Preprocessing
+- Feature selection: U1–U21  
+- Conversion to NumPy arrays  
+- Target normalization  
 
+### 2. Model Selection
+- Linear Regression  
+- Chosen for interpretability and baseline performance evaluation  
 
+### 3. Training
+- Model trained using historical battery voltage data  
+- Saved as a serialized `.pkl` file for deployment  
+
+### 4. Evaluation
+Metrics used:
+- R² Score  
+- Mean Squared Error (MSE)  
+- Mean Absolute Error (MAE)  
+
+### 5. Prediction & Classification
+- SOH predicted as a continuous value  
+- Health status determined using a threshold:
+  - SOH > 0.7 → Healthy  
+  - SOH ≤ 0.7 → Unhealthy  
 
 
 ## Project Structure
