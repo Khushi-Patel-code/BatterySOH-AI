@@ -13,13 +13,33 @@ The application is built with:
 
 ## 🧩 Problem Statement
 
-Battery degradation directly affects performance, safety, and lifespan in modern energy systems.
-Manually assessing battery health is time-consuming and often inaccessible to non-experts.
+Battery degradation directly affects the performance, safety, and lifespan of modern devices such as electric vehicles, mobile electronics, and energy storage systems.
 
-This project aims to:
-- Predict battery State of Health (SOH) using machine learning
-- Provide intuitive insights through an interactive dashboard
-- Assist users with battery-related questions via an AI chatbot
+However:
+- Raw battery sensor data is difficult to interpret.
+- Traditional SOH estimation requires expert analysis.
+- Users lack intuitive tools to understand battery health trends.
+
+This project addresses these challenges by:
+- Predicting battery State of Health (SOH) using machine learning.
+- Classifying battery condition in a human-readable way.
+- Providing an AI chatbot to explain predictions and answer battery-related questions.
+
+## 📖 Project Overview
+
+The application allows users to:
+1. Input battery voltage readings (U1–U21)
+2. Receive a predicted SOH value and health status
+3. View model evaluation metrics
+4. Interact with an AI chatbot for explanations and battery care guidance
+
+The ML model and chatbot operate together:
+- The ML model generates predictions.
+- The chatbot explains results and answers general battery questions using ChatGPT.
+
+## 📊 Dataset Overview
+
+
 
 ## 🤖 Machine Learning Pipeline
 
@@ -29,12 +49,8 @@ This project aims to:
 4. Model performance is evaluated using R², MAE, and MSE
 5. Predictions are served through a Flask API
 
-## Dataset Overview
 
-The model is trained on the PulseBat dataset (`Data/PulseBat Dataset`), containing voltage pulse features from multiple battery cells (U1–U21).
-Aggregated cell-level information is used to estimate the overall battery pack SOH.
 
----
 
 ## Project Structure
 
