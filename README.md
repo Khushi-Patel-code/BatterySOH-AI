@@ -128,7 +128,7 @@ The dashboard is designed for **clarity** and **visual impact**, providing real-
 - AWS Elastic Beanstalk (Backend API)
 - CORS-enabled API communication
 
-## Project Structure
+## 📂 Project Structure
 
 ```
 BatterySOH_Project/
@@ -148,17 +148,7 @@ BatterySOH_Project/
     └── README.md
 ```
 
----
-
-## Features
-
-* Predicts battery **State of Health (SOH)** using Linear Regression Model
-* Clean React interface with routing
-* Chatbox Integration via ChatGPT
-* CORS-enabled full-stack communication
-
-
-# Local Development Setup
+## ⚙️ Local Development Setup
 
 ## 1. Backend Setup (Flask API)
 
@@ -231,8 +221,7 @@ OPENAI_API_KEY=your_key_here
 VITE_API_URL=http://localhost:5000
 ```
 
-
-# Deployment (AWS)
+## Deployment (AWS)
 
 The app is currently deployed with:
 
@@ -250,7 +239,7 @@ Public URL:
 * Build + upload via `npm run build`
 
 
-# Build Commands
+## Build Commands
 
 ## **Frontend Production Build**
 
@@ -274,7 +263,7 @@ gunicorn app:app
 - Battery degradation trend visualization
 - Multi-battery comparison support
 
-# Contributors
+## 👥 Contributors
 
 * **Vinujen** – Web Application & Chatbox Integration
 * **Rukshan** - Web Application & Chatbox Integration
